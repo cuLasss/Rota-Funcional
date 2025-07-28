@@ -3,6 +3,7 @@
 Este é um projeto de academia online desenvolvido por Lucas Martin.
 
 Aqui você pode gerenciar treinos, acompanhar seu progresso e muito mais.
+https://culasss.github.io/Rota-Funcional/
 
 ## Tecnologias usadas
 
