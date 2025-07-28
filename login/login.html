@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota Funcional - Login</title>
+  <link rel="icon" href="../assets/favicon.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="../assets/img/logorota.png" alt="Logo Rota Funcional" class="logo-login">
+  </header>
+
+  <main class="login-container" id="login-container" role="main" aria-labelledby="login-title">
+    <div class="login-form">
+      <h2 id="login-title">Login ou Cadastro</h2>
+
+      <!-- Formulário de Login -->
+      <form id="login-form" aria-hidden="false" aria-labelledby="login-title">
+        <div class="input-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" required placeholder="Digite seu usuário"
+            aria-describedby="username-help">
+        </div>
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required placeholder="Digite sua senha"
+            aria-describedby="password-help">
+        </div>
+        <button type="submit">Entrar</button>
+        <p>Não tem uma conta? Adquira agora nossos planos! <span id="show-register" role="button"
+            tabindex="0">Cadastre-se</span></p>
+        <p><a href="#" id="forgot-password">Esqueceu sua senha?</a></p> <!-- Link adicionado -->
+      </form>
+
+      <!-- Formulário de Cadastro -->
+      <form id="register-form" class="hidden" aria-hidden="true" aria-labelledby="login-title">
+        <div class="input-group">
+          <label for="new-username">Novo Usuário</label>
+          <input type="text" id="new-username" name="new-username" required placeholder="Digite um usuário"
+            aria-describedby="new-username-help">
+          <small id="new-username-help" class="form-text">Escolha um nome de usuário único.</small>
+        </div>
+        <div class="input-group">
+          <label for="new-password">Nova Senha</label>
+          <input type="password" id="new-password" name="new-password" required placeholder="Digite uma senha"
+            aria-describedby="new-password-help">
+          <small id="new-password-help" class="form-text">A senha deve ter pelo menos 6 caracteres.</small>
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirmar Senha</label>
+          <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme a senha"
+            aria-describedby="confirm-password-help">
+          <small id="confirm-password-help" class="form-text">Digite novamente sua senha para confirmar.</small>
+        </div>
+        <button type="submit">Cadastrar</button>
+        <button type="button" class="back-btn" id="show-login">Voltar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Rota Funcional - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="login.js"></script> <!-- Seu script JavaScript -->
+</body>
+
+</html>

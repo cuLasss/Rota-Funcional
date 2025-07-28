@@ -1,0 +1,86 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #1d1d1d; /* Fundo escuro */
+  color: #fff; /* Cor do texto */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Estilo do Header */
+header {
+  background-color: #131514; /* Cor de fundo do header */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo Principal */
+main {
+  background-color: rgba(51, 51, 51, 0.9); /* Fundo levemente transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px; /* Largura máxima do formulário */
+  text-align: center;
+}
+
+/* Grupos de Entrada */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botões */
+button {
+  background-color: #4CAF50; /* Cor do botão */
+  color: #fff; /* Cor do texto */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Ocultar formulário */
+.hidden {
+  display: none;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #131514; /* Cor de fundo do footer */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 20px;
+}

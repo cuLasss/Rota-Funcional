@@ -1,0 +1,436 @@
+/* Variáveis de CSS para cores */
+:root {
+  --bg-color: #000;
+  /* Fundo preto */
+  --bg-resources-color: rgba(19, 21, 20, 0.85);
+  /* Fundo levemente transparente */
+  --text-color: #fff;
+  /* Cor do texto em branco */
+  --header-bg-color: rgba(19, 21, 20, 0.9);
+  --footer-bg-color: #131514;
+  --button-bg-color: #4CAF50;
+  --button-hover-color: #45a049;
+  --cta-bg-color: #39853b;
+  /* Cor para botões CTA */
+}
+
+#start-button {
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Bebas Neue', sans-serif;
+  /* Altera a fonte */
+  font-size: 1.2rem;
+  /* Ajuste o tamanho, se necessário */
+}
+
+/* Estilos Gerais */
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--bg-color);
+  background-image: url('../assets/img/backgroundAD.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo do Header */
+header {
+  background-color: var(--header-bg-color);
+  height: 130px;
+  display: flex;
+  padding: 0 20px;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: center;
+  /* Centraliza logo e botões */
+  width: 100%;
+  position: relative;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  /* Centraliza a logo */
+  position: absolute;
+  /* Posiciona a logo em relação ao header */
+  left: 50%;
+  /* Move para o centro */
+  transform: translateX(-50%);
+  /* Centraliza a logo */
+  top: -10px;
+}
+
+.logo-login {
+  width: 150px;
+}
+
+/* Botões do Header */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto;
+  /* Garante que os botões fiquem à direita */
+}
+
+/* Estilos dos Botões */
+.acquire-button,
+.login-button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  background-color: #888;
+  /* Cor padrão para botões */
+  color: #fff;
+}
+
+.acquire-button {
+  background-color: var(--button-bg-color);
+}
+
+.acquire-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.login-button:hover {
+  background-color: #777;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: var(--footer-bg-color);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Container Principal */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+/* Promo Section */
+.promo-section {
+  font-size: 1.3rem;
+  background-color: var(--bg-resources-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Video Section */
+.video-section {
+  background-color: var(--bg-resources-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  /* Centraliza horizontalmente */
+  width: 90%;
+  /* Largura da seção */
+  max-width: 800px;
+  /* Largura máxima */
+}
+
+.video-section h2 {
+  font-size: 1.8rem;
+  /* Tamanho do título */
+  margin-bottom: 10px;
+  /* Espaçamento abaixo do título */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+.video-section iframe {
+  width: 100%;
+  /* Largura do vídeo para ocupar toda a seção */
+  height: 450px;
+  /* Altura do vídeo */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+}
+
+/* Depoimentos Section */
+.testimonials {
+  margin: 20px auto;
+  /* Centraliza horizontalmente */
+  width: 90%;
+  /* Largura da seção */
+  max-width: 800px;
+  /* Largura máxima */
+  background-color: var(--bg-resources-color);
+  border-radius: 10px;
+  padding: 10px;
+  /* Reduzido para ser menor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+}
+
+.testimonial-banners {
+  display: flex;
+  /* Cria um layout flexível */
+  overflow-x: auto;
+  /* Permite rolagem horizontal */
+}
+
+.testimonial-banner {
+  flex: 0 0 auto;
+  /* Impede o flex-grow */
+  margin: 20px;
+  /* Espaço entre banners */
+  cursor: pointer;
+  /* Mão ao passar o mouse */
+  text-align: center;
+  /* Centraliza texto */
+  transition: transform 0.3s;
+  /* Animação de aumento */
+}
+
+.testimonial-banner:hover {
+  transform: scale(1.1);
+  /* Aumenta a imagem ao passar o mouse */
+}
+
+.testimonial-banner img {
+  width: 100px;
+  /* Largura da imagem do cliente */
+  height: 100px;
+  /* Altura fixa para uniformidade */
+  object-fit: cover;
+  /* Ajusta a imagem para preencher o espaço */
+  border-radius: 50%;
+  /* Faz a imagem redonda */
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  /* Inicia como none */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Fundo escuro */
+  align-items: center;
+  justify-content: center;
+  /* Centraliza o conteúdo */
+  z-index: 1000;
+  /* Fica acima de outros elementos */
+}
+
+.video-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* FAQ Section */
+.faq {
+  font-size: 1.2rem;
+  margin: 20px auto;
+  /* Centraliza horizontalmente */
+  width: 90%;
+  /* Largura da seção */
+  max-width: 1200px;
+  /* Largura máxima */
+  background-color: var(--bg-resources-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+}
+
+/* Estilo para Botões CTA */
+.cta-button {
+  background-color: var(--cta-bg-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #45a049; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  /* Tamanho para subtítulos */
+  margin-bottom: 10px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: var(--bg-resources-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #555;
+  /* Cor de fundo ao passar o mouse */
+}
+
+.faq-answer {
+  max-height: 0;
+  /* Começa oculto */
+  overflow: hidden;
+  /* Esconde o conteúdo que não cabe */
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  /* Animação suave */
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 0 10px;
+  /* Padding horizontal inicial */
+}
+
+.faq-answer.show {
+  max-height: 200px;
+  /* Altura máxima quando visível */
+  padding: 10px;
+  /* Padding vertical quando visível */
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  /* Distância do fundo */
+  right: 20px;
+  /* Distância da direita */
+  background-color: var(--cta-bg-color);
+  /* Cor do botão */
+  color: #fff;
+  /* Cor do texto */
+  padding: 15px 30px;
+  /* Espaçamento interno */
+  border-radius: 50px;
+  /* Bordas arredondadas */
+  text-align: center;
+  font-size: 1.4rem;
+  /* Tamanho do texto */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Transição suave */
+  z-index: 1000;
+  /* Garante que fique acima de outros elementos */
+}
+
+.floating-button:hover {
+  background-color: #45a049;
+  /* Cor ao passar o mouse */
+  transform: scale(1.05);
+  /* Leve aumento ao passar o mouse */
+}
+
+.instagram-button {
+  display: inline-block;
+  background-color: var(--cta-bg-color);
+  /* Cor do botão */
+  color: #fff;
+  /* Cor do texto */
+  padding: 15px 30px;
+  /* Espaçamento interno */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  text-align: center;
+  font-size: 1.2rem;
+  /* Tamanho do texto */
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  /* Transição suave */
+}
+
+.instagram-button:hover {
+  background-color: #45a049; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Consultas de mídia para dispositivos menores */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo-login {
+    width: 120px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .acquire-button,
+  .login-button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .video-section {
+    margin-bottom: 20px;
+    /* Adiciona espaço abaixo do vídeo */
+  }
+
+  .testimonials,
+  .faq {
+    margin: 0 0 20px 0;
+    /* Adiciona espaço abaixo em telas menores */
+  }
+
+  .testimonial-banners {
+    flex-direction: column;
+    /* Alinha verticalmente em telas menores */
+  }
+}

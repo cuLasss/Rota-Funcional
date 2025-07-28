@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Senha</title>
+  <link rel="icon" href="../assets/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="recuperar-senha.css"> <!-- Estilos CSS -->
+</head>
+<body>
+
+  <header>
+    <h1>Recuperação de Senha</h1>
+  </header>
+
+  <main>
+    <form id="recover-form">
+      <div class="input-group">
+        <label for="recover-email">E-mail</label>
+        <input type="email" id="recover-email" name="recover-email" required placeholder="Digite seu e-mail">
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form id="reset-password-form" class="hidden">
+      <div class="input-group">
+        <label for="new-password">Nova Senha</label>
+        <input type="password" id="new-password" name="new-password" required placeholder="Digite sua nova senha">
+      </div>
+      <div class="input-group">
+        <label for="confirm-new-password">Confirmar Nova Senha</label>
+        <input type="password" id="confirm-new-password" name="confirm-new-password" required placeholder="Confirme sua nova senha">
+      </div>
+      <button type="submit">Redefinir Senha</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Rota Funcional - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../login/login.js"></script> <!-- Inclua o login.js -->
+  <script src="recuperar-senha.js"></script> <!-- Seu script JavaScript -->
+</body>
+</html>
